@@ -53,13 +53,14 @@ body {
     flex-direction: row;
   }
 
-  .a {
-    min-height: 10%;
-  }
-
   .f {
     margin-top: 0;
     margin-left: 0.5rem;
+  }
+
+  .group {
+    flex-grow: 8;
+    min-height: 90vh;
   }
 
 
