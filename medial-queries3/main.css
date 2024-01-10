@@ -1,9 +1,6 @@
 body {
   background: peachpuff;
 }
- * {
-  outline: 1px solid red;
- }
 
  .container {
   display: flex;
