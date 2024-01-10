@@ -6,17 +6,16 @@ body {
   height: 100vh;
   font-size: 2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
   flex-wrap: wrap;
-
 }
 
 .a {
   background: forestgreen;
   width: 100%;
-  margin: 1rem;
   margin-bottom: 0.5rem;
+  min-height: 15vh;
 }
 
 
@@ -24,18 +23,17 @@ body {
   display: flex;
   flex-grow: 5;
   flex-wrap: wrap;
-  margin: 1rem;
 }
 
 .b {
   width:  100%;
-  min-height: 50vh;
+  min-height: 25vh;
   background: green;
 }
 
 .c, .d, .e {
-  flex-grow: 2;
-  min-height: 20vh;
+  flex-grow: 1;
+  min-height: 10vh;
   background: darkgoldenrod;
   margin: 1rem;
   margin-bottom: 0;
@@ -44,7 +42,25 @@ body {
 
 .f {
   background: teal;
-  flex-grow: 1;
-  margin: 1rem;
+  flex-grow: 3;
+  margin-top: 1rem;
   margin-left: 0;
+}
+
+@media (min-width: 500px) {
+
+  .container {
+    flex-direction: row;
+  }
+
+  .a {
+    min-height: 10%;
+  }
+
+  .f {
+    margin-top: 0;
+    margin-left: 0.5rem;
+  }
+
+
 }
