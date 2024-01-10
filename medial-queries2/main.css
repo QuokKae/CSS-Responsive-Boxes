@@ -2,10 +2,6 @@ body {
   background: papayawhip;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .container {
   height: 100vh;
   font-size: 2rem;
@@ -13,34 +9,42 @@ body {
   flex-direction: row;
   text-align: center;
   flex-wrap: wrap;
-  background: red;
+
 }
 
 .a {
-  background: whitesmoke;
+  background: forestgreen;
   width: 100%;
+  margin: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 
 .group {
   display: flex;
   flex-grow: 5;
-  background: green;
   flex-wrap: wrap;
+  margin: 1rem;
 }
 
 .b {
   width:  100%;
   min-height: 50vh;
+  background: green;
 }
 
 .c, .d, .e {
   flex-grow: 2;
   min-height: 20vh;
+  background: darkgoldenrod;
+  margin: 1rem;
+  margin-bottom: 0;
 }
 
 
 .f {
   background: teal;
   flex-grow: 1;
+  margin: 1rem;
+  margin-left: 0;
 }
