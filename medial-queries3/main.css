@@ -24,11 +24,10 @@ body {
  .group-1 {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 5;
+  flex-grow: 2;
  }
 
  .b, .c, .d, .e, .f, .g {
-  flex-grow: 3;
   background: teal;
   width: 25%;
   height: 20vh;
@@ -37,8 +36,8 @@ body {
 
  .h {
   background: pink;
-  flex-grow: 5;
-  min-height: 15vh;
+  flex-grow: 1;
+  min-height: 10vh;
  }
 
  @media (min-width: 800px) {
