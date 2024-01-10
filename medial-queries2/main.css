@@ -47,7 +47,7 @@ body {
   margin-left: 0;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 800px) {
 
   .container {
     flex-direction: row;

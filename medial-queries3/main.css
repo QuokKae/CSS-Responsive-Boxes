@@ -1,3 +1,40 @@
 body {
   background: peachpuff;
 }
+ * {
+  outline: 1px solid red;
+ }
+
+ .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+  font-size: 2rem;
+  text-align: center;
+ }
+
+ .a {
+  background: mediumspringgreen;
+  width: 100%;
+ }
+
+ .group-1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+ }
+
+ .b, .c, .d, .e, .f, .g {
+  flex-grow: 3;
+  background: teal;
+  width: 25%;
+  height: 20vh;
+  margin: 1.5rem;
+ }
+
+ .h {
+  background: pink;
+  flex-grow: 5;
+  min-height: 15vh;
+ }
