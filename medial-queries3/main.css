@@ -7,7 +7,7 @@ body {
 
  .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   height: 100vh;
   font-size: 2rem;
@@ -17,12 +17,14 @@ body {
  .a {
   background: mediumspringgreen;
   width: 100%;
+  flex-grow: 4;
+  min-height: 10vh;
  }
 
  .group-1 {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  flex-grow: 5;
  }
 
  .b, .c, .d, .e, .f, .g {
@@ -37,4 +39,19 @@ body {
   background: pink;
   flex-grow: 5;
   min-height: 15vh;
+ }
+
+ @media (min-width: 800px) {
+
+  .container {
+    flex-direction: row;
+  }
+
+  .b, .c, .d, .e, .f, .g {
+    flex-wrap: wrap;
+  }
+
+  .h {
+    min-height: 50vh;
+  }
  }
